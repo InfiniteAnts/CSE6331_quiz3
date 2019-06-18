@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Q5
+{% endblock %}
+
+{% block main %}
+    <form action="{{ url_for('q5') }}" method="post">
+        <fieldset>
+            <div class="form-group">
+                <input autocomplete="off" autofocus class="form-control" name="lat1" placeholder="Latitude 1" type="search"/>
+            </div>
+            <div class="form-group">
+                <input autocomplete="off" autofocus class="form-control" name="lat2" placeholder="Latitude 2" type="search"/>
+            </div>
+            <div class="form-group">
+                <button class="btn btn-default" type="submit">Search</button>
+            </div>
+        </fieldset>
+    </form>
+{% endblock %}
